@@ -1,4 +1,6 @@
 platform :ios, '11.0'
+use_frameworks!
+
 
 def myPods
    pod 'SDWebImage', '~> 5.9.4'
@@ -7,16 +9,10 @@ end
  
 
 target 'SaltSideDemo' do
-  use_frameworks!
-
   myPods
+end
 
   target 'SaltSideDemoTests' do
      myPods
   end
 
-  target 'SaltSideDemoUITests' do
-      myPods
-  end
-
-end
