@@ -9,7 +9,9 @@ import XCTest
 @testable import SaltSideDemo
 
 class SaltSideDemoTests: XCTestCase {
+    /// List View Controller instance
     var listVC: ListViewController!
+    /// UserList Model
     var listUser: [UserModel]!
     
     override func setUpWithError() throws {
@@ -19,12 +21,17 @@ class SaltSideDemoTests: XCTestCase {
     }
 
     override func tearDownWithError() throws {
+        listVC = nil
+        listUser = nil
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
     
+    /// TestUserListWebservice call
     func testWebService() {
+        // Create an expectation for api call
         let exp = expectation(description: "WebServiceSuccess")
+        // Request Call
         UserListWebServices.getUserList(processSuccess: { [unowned self] (data) in
             self.listUser = data
             exp.fulfill()
@@ -38,12 +45,14 @@ class SaltSideDemoTests: XCTestCase {
         }
     }
     
+    /// Check loader view start animating
     func testToggle() {
         listVC.viewModel.getUserList()
         XCTAssert(listVC.viewModel.toggleInteraction == false, "Api Call not made and ToggleInteraction made true")
     }
     
     
+    /// Check the user's list count
     func testUserlistCount() {
         let path = Bundle.main.path(forResource: "UserListMock", ofType: "json")
         let data = try! Data(contentsOf: URL(fileURLWithPath: path!))
@@ -51,6 +60,7 @@ class SaltSideDemoTests: XCTestCase {
         XCTAssertTrue(listUser.count == 7, "Results count not matched")
     }
     
+    /// Check if model decodes correctly or not
     func testModelDecode() {
         let path = Bundle.main.path(forResource: "UserListMock", ofType: "json")
         let data = try! Data(contentsOf: URL(fileURLWithPath: path!))
