@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class ListTVCell: UITableViewCell {
 
@@ -21,6 +22,12 @@ class ListTVCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func configure(user: UserModel) {
+        self.userImageView.sd_setImage(with: URL(string: user.image ?? ""), completed: nil)
+        self.nameLabel.text = user.title ?? ""
+        self.descLabel.text = user.description ?? ""
     }
     
 }

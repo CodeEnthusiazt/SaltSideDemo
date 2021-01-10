@@ -14,13 +14,13 @@ class UserListWebServices {
             switch data.result {
             case .success(_):
                 do {
-                    let userList = try JSONDecoder().decode([UserModel].self, from: data.value as? Data ?? Data())
+                    let userList = try JSONDecoder().decode([UserModel].self, from: data.data ?? Data())
                     processSuccess(userList)
                 } catch {
                     processFailure()
                 }
             default:
-                print("")
+                processFailure()
             }
         }
         AlamofireWrapper.AFRequest(url: AppConstants.Url.listpage, response: response)
