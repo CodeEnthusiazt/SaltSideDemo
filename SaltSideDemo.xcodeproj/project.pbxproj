@@ -14,6 +14,8 @@
 		1B7FFDF725AAEED200F39944 /* AlamofireWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7FFDF625AAEED200F39944 /* AlamofireWrapper.swift */; };
 		1B7FFE0525AAFB6E00F39944 /* ListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7FFE0325AAFB6E00F39944 /* ListTVCell.swift */; };
 		1B7FFE0625AAFB6E00F39944 /* ListTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B7FFE0425AAFB6E00F39944 /* ListTVCell.xib */; };
+		1B8F519525AB09E40052E6D4 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8F519425AB09E40052E6D4 /* ListViewModel.swift */; };
+		1B8F519A25AB09F70052E6D4 /* ListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8F519925AB09F70052E6D4 /* ListDataSource.swift */; };
 		1BC346A825AA0B050035434B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC346A725AA0B050035434B /* AppDelegate.swift */; };
 		1BC346AA25AA0B050035434B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC346A925AA0B050035434B /* SceneDelegate.swift */; };
 		1BC346AC25AA0B050035434B /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC346AB25AA0B050035434B /* ListViewController.swift */; };
@@ -52,6 +54,8 @@
 		1B7FFDF625AAEED200F39944 /* AlamofireWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireWrapper.swift; sourceTree = "<group>"; };
 		1B7FFE0325AAFB6E00F39944 /* ListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTVCell.swift; sourceTree = "<group>"; };
 		1B7FFE0425AAFB6E00F39944 /* ListTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTVCell.xib; sourceTree = "<group>"; };
+		1B8F519425AB09E40052E6D4 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		1B8F519925AB09F70052E6D4 /* ListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDataSource.swift; sourceTree = "<group>"; };
 		1BC346A425AA0B050035434B /* SaltSideDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaltSideDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BC346A725AA0B050035434B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BC346A925AA0B050035434B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -146,6 +150,7 @@
 		1B7FFDFB25AAF41D00F39944 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				1B8F519325AB09C40052E6D4 /* ListPage */,
 				1B7FFE0225AAFB2200F39944 /* TableViewCells */,
 				1BC346AB25AA0B050035434B /* ListViewController.swift */,
 				1BC346AD25AA0B050035434B /* Main.storyboard */,
@@ -160,6 +165,15 @@
 				1B7FFE0425AAFB6E00F39944 /* ListTVCell.xib */,
 			);
 			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		1B8F519325AB09C40052E6D4 /* ListPage */ = {
+			isa = PBXGroup;
+			children = (
+				1B8F519425AB09E40052E6D4 /* ListViewModel.swift */,
+				1B8F519925AB09F70052E6D4 /* ListDataSource.swift */,
+			);
+			path = ListPage;
 			sourceTree = "<group>";
 		};
 		1BC3469B25AA0B050035434B = {
@@ -486,8 +500,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B8F519525AB09E40052E6D4 /* ListViewModel.swift in Sources */,
 				1BC346AC25AA0B050035434B /* ListViewController.swift in Sources */,
 				1B47643B25AA199D000EBA26 /* UserListWebServices.swift in Sources */,
+				1B8F519A25AB09F70052E6D4 /* ListDataSource.swift in Sources */,
 				1B7FFDF725AAEED200F39944 /* AlamofireWrapper.swift in Sources */,
 				1BC346A825AA0B050035434B /* AppDelegate.swift in Sources */,
 				1BC346AA25AA0B050035434B /* SceneDelegate.swift in Sources */,
