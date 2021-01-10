@@ -12,6 +12,8 @@
 		1B47643B25AA199D000EBA26 /* UserListWebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B47643A25AA199D000EBA26 /* UserListWebServices.swift */; };
 		1B7FFDF225AAEEB600F39944 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7FFDF125AAEEB600F39944 /* AppConstants.swift */; };
 		1B7FFDF725AAEED200F39944 /* AlamofireWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7FFDF625AAEED200F39944 /* AlamofireWrapper.swift */; };
+		1B7FFE0525AAFB6E00F39944 /* ListTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7FFE0325AAFB6E00F39944 /* ListTVCell.swift */; };
+		1B7FFE0625AAFB6E00F39944 /* ListTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1B7FFE0425AAFB6E00F39944 /* ListTVCell.xib */; };
 		1BC346A825AA0B050035434B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC346A725AA0B050035434B /* AppDelegate.swift */; };
 		1BC346AA25AA0B050035434B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC346A925AA0B050035434B /* SceneDelegate.swift */; };
 		1BC346AC25AA0B050035434B /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC346AB25AA0B050035434B /* ListViewController.swift */; };
@@ -48,6 +50,8 @@
 		1B47643A25AA199D000EBA26 /* UserListWebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListWebServices.swift; sourceTree = "<group>"; };
 		1B7FFDF125AAEEB600F39944 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		1B7FFDF625AAEED200F39944 /* AlamofireWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireWrapper.swift; sourceTree = "<group>"; };
+		1B7FFE0325AAFB6E00F39944 /* ListTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTVCell.swift; sourceTree = "<group>"; };
+		1B7FFE0425AAFB6E00F39944 /* ListTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTVCell.xib; sourceTree = "<group>"; };
 		1BC346A425AA0B050035434B /* SaltSideDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaltSideDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BC346A725AA0B050035434B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BC346A925AA0B050035434B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -142,10 +146,20 @@
 		1B7FFDFB25AAF41D00F39944 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				1B7FFE0225AAFB2200F39944 /* TableViewCells */,
 				1BC346AB25AA0B050035434B /* ListViewController.swift */,
 				1BC346AD25AA0B050035434B /* Main.storyboard */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1B7FFE0225AAFB2200F39944 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				1B7FFE0325AAFB6E00F39944 /* ListTVCell.swift */,
+				1B7FFE0425AAFB6E00F39944 /* ListTVCell.xib */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 		1BC3469B25AA0B050035434B = {
@@ -325,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BC346B725AA0B060035434B /* LaunchScreen.storyboard in Resources */,
+				1B7FFE0625AAFB6E00F39944 /* ListTVCell.xib in Resources */,
 				1BC346B425AA0B060035434B /* Assets.xcassets in Resources */,
 				1BC346AF25AA0B050035434B /* Main.storyboard in Resources */,
 			);
@@ -476,6 +491,7 @@
 				1B7FFDF725AAEED200F39944 /* AlamofireWrapper.swift in Sources */,
 				1BC346A825AA0B050035434B /* AppDelegate.swift in Sources */,
 				1BC346AA25AA0B050035434B /* SceneDelegate.swift in Sources */,
+				1B7FFE0525AAFB6E00F39944 /* ListTVCell.swift in Sources */,
 				1B7FFDF225AAEEB600F39944 /* AppConstants.swift in Sources */,
 				1B47643525AA192B000EBA26 /* UserModel.swift in Sources */,
 				1BC346B225AA0B050035434B /* SaltSideDemo.xcdatamodeld in Sources */,
