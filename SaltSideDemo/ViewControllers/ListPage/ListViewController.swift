@@ -21,7 +21,7 @@ class ListViewController: UIViewController {
         listTableView.delegate = viewModel.dataservices
         listTableView.dataSource = viewModel.dataservices
         self.view.addSubview(activityView)
-        self.view.center = activityView.center
+        activityView.center = self.view.center
         
         viewModel.$toggleInteraction.sink { [unowned self] (toggle) in
              toggle ? self.activityView.stopAnimating() :                self.activityView.startAnimating()

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		08B51E6E256FDD147C002211 /* Pods_SaltSideDemo_SaltSideDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8C9055FF03AA1D13BAD36A6 /* Pods_SaltSideDemo_SaltSideDemoTests.framework */; };
+		1B2EE49425AB6E43007934F4 /* UserListMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 1B2EE49325AB6E43007934F4 /* UserListMock.json */; };
 		1B47643525AA192B000EBA26 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B47643425AA192B000EBA26 /* UserModel.swift */; };
 		1B47643B25AA199D000EBA26 /* UserListWebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B47643A25AA199D000EBA26 /* UserListWebServices.swift */; };
 		1B7FFDF225AAEEB600F39944 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7FFDF125AAEEB600F39944 /* AppConstants.swift */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		135599607E83DD2102CE7AB4 /* Pods_SaltSideDemo_SaltSideDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaltSideDemo_SaltSideDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B2EE49325AB6E43007934F4 /* UserListMock.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = UserListMock.json; sourceTree = "<group>"; };
 		1B47643425AA192B000EBA26 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		1B47643A25AA199D000EBA26 /* UserListWebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListWebServices.swift; sourceTree = "<group>"; };
 		1B7FFDF125AAEEB600F39944 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				1B47643425AA192B000EBA26 /* UserModel.swift */,
+				1B2EE49325AB6E43007934F4 /* UserListMock.json */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B2EE49425AB6E43007934F4 /* UserListMock.json in Resources */,
 				1BC346B725AA0B060035434B /* LaunchScreen.storyboard in Resources */,
 				1B7FFE0625AAFB6E00F39944 /* ListTVCell.xib in Resources */,
 				1BC346B425AA0B060035434B /* Assets.xcassets in Resources */,
