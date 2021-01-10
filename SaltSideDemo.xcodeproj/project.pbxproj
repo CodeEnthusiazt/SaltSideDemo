@@ -14,7 +14,7 @@
 		1B7FFDF725AAEED200F39944 /* AlamofireWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7FFDF625AAEED200F39944 /* AlamofireWrapper.swift */; };
 		1BC346A825AA0B050035434B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC346A725AA0B050035434B /* AppDelegate.swift */; };
 		1BC346AA25AA0B050035434B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC346A925AA0B050035434B /* SceneDelegate.swift */; };
-		1BC346AC25AA0B050035434B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC346AB25AA0B050035434B /* ViewController.swift */; };
+		1BC346AC25AA0B050035434B /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC346AB25AA0B050035434B /* ListViewController.swift */; };
 		1BC346AF25AA0B050035434B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BC346AD25AA0B050035434B /* Main.storyboard */; };
 		1BC346B225AA0B050035434B /* SaltSideDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1BC346B025AA0B050035434B /* SaltSideDemo.xcdatamodeld */; };
 		1BC346B425AA0B060035434B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BC346B325AA0B060035434B /* Assets.xcassets */; };
@@ -51,7 +51,7 @@
 		1BC346A425AA0B050035434B /* SaltSideDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaltSideDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BC346A725AA0B050035434B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BC346A925AA0B050035434B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1BC346AB25AA0B050035434B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1BC346AB25AA0B050035434B /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		1BC346AE25AA0B050035434B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1BC346B125AA0B050035434B /* SaltSideDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SaltSideDemo.xcdatamodel; sourceTree = "<group>"; };
 		1BC346B325AA0B060035434B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -142,7 +142,7 @@
 		1B7FFDFB25AAF41D00F39944 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				1BC346AB25AA0B050035434B /* ViewController.swift */,
+				1BC346AB25AA0B050035434B /* ListViewController.swift */,
 				1BC346AD25AA0B050035434B /* Main.storyboard */,
 			);
 			path = ViewControllers;
@@ -471,7 +471,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BC346AC25AA0B050035434B /* ViewController.swift in Sources */,
+				1BC346AC25AA0B050035434B /* ListViewController.swift in Sources */,
 				1B47643B25AA199D000EBA26 /* UserListWebServices.swift in Sources */,
 				1B7FFDF725AAEED200F39944 /* AlamofireWrapper.swift in Sources */,
 				1BC346A825AA0B050035434B /* AppDelegate.swift in Sources */,
