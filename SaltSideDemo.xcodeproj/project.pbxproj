@@ -151,9 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				1B8F519325AB09C40052E6D4 /* ListPage */,
-				1B7FFE0225AAFB2200F39944 /* TableViewCells */,
-				1BC346AB25AA0B050035434B /* ListViewController.swift */,
-				1BC346AD25AA0B050035434B /* Main.storyboard */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -170,6 +167,9 @@
 		1B8F519325AB09C40052E6D4 /* ListPage */ = {
 			isa = PBXGroup;
 			children = (
+				1BC346AD25AA0B050035434B /* Main.storyboard */,
+				1B7FFE0225AAFB2200F39944 /* TableViewCells */,
+				1BC346AB25AA0B050035434B /* ListViewController.swift */,
 				1B8F519425AB09E40052E6D4 /* ListViewModel.swift */,
 				1B8F519925AB09F70052E6D4 /* ListDataSource.swift */,
 			);
