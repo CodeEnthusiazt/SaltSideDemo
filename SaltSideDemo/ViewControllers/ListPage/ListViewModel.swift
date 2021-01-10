@@ -19,16 +19,18 @@ class ListViewModel {
     /// GetUserList from webservice
     func getUserList() {
         self.toggleInteraction = false
-        
+        weak var this = self
         /// Closure for success handler
         /// - Parameter res: User list data
         func proccessSuccess(res: [UserModel]) {
-            toggleInteraction = true
-            self.userListPublisher.send(res)
+            guard let ui = this else {return}
+            ui.toggleInteraction = true
+            ui.userListPublisher.send(res)
         }
         /// Closure for failure handler
         func proccessFailure() {
-            toggleInteraction = true
+            guard let ui = this else {return}
+            ui.toggleInteraction = true
         }
         UserListWebServices.getUserList(processSuccess: proccessSuccess, processFailure: proccessFailure)
     }
