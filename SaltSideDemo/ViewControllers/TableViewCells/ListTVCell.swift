@@ -9,6 +9,9 @@ import UIKit
 
 class ListTVCell: UITableViewCell {
 
+    @IBOutlet weak var userImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var descLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
