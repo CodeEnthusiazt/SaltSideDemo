@@ -3,11 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		08B51E6E256FDD147C002211 /* Pods_SaltSideDemo_SaltSideDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8C9055FF03AA1D13BAD36A6 /* Pods_SaltSideDemo_SaltSideDemoTests.framework */; };
+		1B47643525AA192B000EBA26 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B47643425AA192B000EBA26 /* UserModel.swift */; };
+		1B47643B25AA199D000EBA26 /* UserListWebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B47643A25AA199D000EBA26 /* UserListWebServices.swift */; };
+		1B7FFDF225AAEEB600F39944 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7FFDF125AAEEB600F39944 /* AppConstants.swift */; };
+		1B7FFDF725AAEED200F39944 /* AlamofireWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7FFDF625AAEED200F39944 /* AlamofireWrapper.swift */; };
 		1BC346A825AA0B050035434B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC346A725AA0B050035434B /* AppDelegate.swift */; };
 		1BC346AA25AA0B050035434B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC346A925AA0B050035434B /* SceneDelegate.swift */; };
 		1BC346AC25AA0B050035434B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC346AB25AA0B050035434B /* ViewController.swift */; };
@@ -40,6 +44,10 @@
 
 /* Begin PBXFileReference section */
 		135599607E83DD2102CE7AB4 /* Pods_SaltSideDemo_SaltSideDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaltSideDemo_SaltSideDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B47643425AA192B000EBA26 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		1B47643A25AA199D000EBA26 /* UserListWebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListWebServices.swift; sourceTree = "<group>"; };
+		1B7FFDF125AAEEB600F39944 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		1B7FFDF625AAEED200F39944 /* AlamofireWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireWrapper.swift; sourceTree = "<group>"; };
 		1BC346A425AA0B050035434B /* SaltSideDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaltSideDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BC346A725AA0B050035434B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BC346A925AA0B050035434B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,8 +111,41 @@
 				4929CF0B345BF98B5B7A303B /* Pods-SaltSideDemo-SaltSideDemoUITests.debug.xcconfig */,
 				39C3D3D8A91B0C8FDCD83B9D /* Pods-SaltSideDemo-SaltSideDemoUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		1B47643325AA1879000EBA26 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1B47643425AA192B000EBA26 /* UserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1B47643925AA196A000EBA26 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				1B47643A25AA199D000EBA26 /* UserListWebServices.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		1B7FFDF025AAEEA100F39944 /* Constants+Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1B7FFDF125AAEEB600F39944 /* AppConstants.swift */,
+				1B7FFDF625AAEED200F39944 /* AlamofireWrapper.swift */,
+			);
+			path = "Constants+Utils";
+			sourceTree = "<group>";
+		};
+		1B7FFDFB25AAF41D00F39944 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1BC346AB25AA0B050035434B /* ViewController.swift */,
+				1BC346AD25AA0B050035434B /* Main.storyboard */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		1BC3469B25AA0B050035434B = {
@@ -132,10 +173,12 @@
 		1BC346A625AA0B050035434B /* SaltSideDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1B7FFDFB25AAF41D00F39944 /* ViewControllers */,
+				1B7FFDF025AAEEA100F39944 /* Constants+Utils */,
+				1B47643925AA196A000EBA26 /* WebService */,
+				1B47643325AA1879000EBA26 /* Models */,
 				1BC346A725AA0B050035434B /* AppDelegate.swift */,
 				1BC346A925AA0B050035434B /* SceneDelegate.swift */,
-				1BC346AB25AA0B050035434B /* ViewController.swift */,
-				1BC346AD25AA0B050035434B /* Main.storyboard */,
 				1BC346B325AA0B060035434B /* Assets.xcassets */,
 				1BC346B525AA0B060035434B /* LaunchScreen.storyboard */,
 				1BC346B825AA0B060035434B /* Info.plist */,
@@ -429,8 +472,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BC346AC25AA0B050035434B /* ViewController.swift in Sources */,
+				1B47643B25AA199D000EBA26 /* UserListWebServices.swift in Sources */,
+				1B7FFDF725AAEED200F39944 /* AlamofireWrapper.swift in Sources */,
 				1BC346A825AA0B050035434B /* AppDelegate.swift in Sources */,
 				1BC346AA25AA0B050035434B /* SceneDelegate.swift in Sources */,
+				1B7FFDF225AAEEB600F39944 /* AppConstants.swift in Sources */,
+				1B47643525AA192B000EBA26 /* UserModel.swift in Sources */,
 				1BC346B225AA0B050035434B /* SaltSideDemo.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
