@@ -28,8 +28,7 @@ class ListViewController: UIViewController {
         // Adding loader to superview
         self.view.addSubview(activityView)
         activityView.center = self.view.center
-        
-        //Subscribing toggleInteraction
+        // Subscribing toggleInteraction
         viewModel.$toggleInteraction.sink { [unowned self] (toggle) in
              toggle ? self.activityView.stopAnimating() :                self.activityView.startAnimating()
         }.store(in: &disposeBag)
@@ -40,8 +39,25 @@ class ListViewController: UIViewController {
                 self.viewModel.dataservices.userList = res
                 self.listTableView.reloadData()
             }.store(in: &disposeBag)
+        // Subscribing to show alert for error cases
+        viewModel.showAlert.sink { [unowned self] (content) in
+            self.showAlert(AppConstants.CommonKeys.CommonAlertTitle, alertContent: content, actionTitle: AppConstants.CommonKeys.CommonAlertActionButtonTitle)
+        }.store(in: &disposeBag)
         // Calling userlist from viewmodel
         viewModel.getUserList()
+    }
+}
+
+extension UIViewController {
+    /// Show Alert - extension for viewcontroller
+    /// - Parameters:
+    ///   - alertTitle: Title of the alert
+    ///   - alertContent: Content shown in the alert
+    ///   - actionTitle: User Action title - OK or Cancel
+    func showAlert(_ alertTitle: String, alertContent: String, actionTitle: String) {
+        let alert = UIAlertController(title: alertTitle, message: alertContent, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: actionTitle, style: UIAlertAction.Style.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
     }
 }
 

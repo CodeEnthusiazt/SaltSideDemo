@@ -17,7 +17,5 @@ struct AppConstants {
     struct CommonKeys {
         static let CommonAlertTitle = "Alert"
         static let CommonAlertActionButtonTitle = "OK"
-        static let kSomethingWentWrong = "Something Went Wrong. Please Try Again Later"
-        static let kNoResultsFound = "No Results Found"
     }
 }
